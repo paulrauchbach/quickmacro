@@ -1,0 +1,19 @@
+{
+    "hotkeys": [
+        {
+            "hotkey": "ctrl+alt+m",
+            "action": "toggle_system_mute",
+            "enabled": true
+        },
+        {
+            "hotkey": "ctrl+shift+k",
+            "action": "toggle_active_app_mute",
+            "enabled": true
+        }
+    ],
+    "settings": {
+        "start_minimized": true,
+        "show_notifications": false,
+        "auto_start": false
+    }
+}

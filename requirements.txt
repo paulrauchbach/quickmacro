@@ -1,0 +1,9 @@
+pystray==0.19.5
+keyboard==0.13.5
+pycaw==20220416
+psutil==5.9.6
+Pillow==10.1.0
+pyinstaller==6.2.0
+pywin32==306
+comtypes==1.2.0
+PyQt6==6.9.1 
