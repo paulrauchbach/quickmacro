@@ -19,7 +19,11 @@ logger = logging.getLogger(__name__)
 
 class ConfigManager:
     def __init__(self):
-        self.config_dir = Path.home() / "AppData" / "Local" / "QuickMacro"
+        # Prefer Roaming AppData (e.g., %APPDATA%\\QuickMacro)
+        roaming_base = Path(
+            os.getenv("APPDATA") or (Path.home() / "AppData" / "Roaming")
+        )
+        self.config_dir = roaming_base / "QuickMacro"
         self.config_file = self.config_dir / "config.json"
         self.default_config_file = Path(__file__).parent / "default_config.json"
 
